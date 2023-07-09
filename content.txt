@@ -1,0 +1,33 @@
+ -------------------------------------------------------------------------------------------------------------------------------------------
+ Horizontal Card
+
+ <div class="container">
+    <div class="row g-5 justify-content-evenly">
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="row g-0">
+            <div class="col-6 col-md-5">
+              <img src="images/01.jpg" class="card-img img-fluid rounded-start" alt="">
+            </div>
+            <div class="col-6 col-md-7">
+              <div class="card-body d-flex flex-column">
+                <div class="h-100">
+                  <h3 class="card-title">Reading Point</h3>
+                  <h2 class="card-title">Book Name</h2>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, neque delectus sapiente voluptatibus
+                    atque repellat.
+                  </p>
+                  <h4 class="card-title mb-3">&#8377;<strong>500</strong></h4>
+                </div>
+                <div>
+                  <button class="btn btn-dark" type="button">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  ---------------------------------------------------------------------------------------------------------------------------------------------

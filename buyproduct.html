@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+  <style>
+    select {
+      border-radius: 4px;
+    }
+
+    div .customer-detail {
+      max-width: 500px;
+    }
+
+    div .payment-detail {
+      max-width: 300px;
+      max-height: 380px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar Start-->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+    <div class="container-fluid bg-dark ">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" id="logo"></a>
+        <ul class="navbar-nav mb-2 mb-lg-0 d-flex ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
+              Select Category
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Education.html">Education</a></li>
+              <li><a class="dropdown-item" href="Entrepreneurship.html">Entrepreneurship </a></li>
+              <li><a class="dropdown-item" href="Fitness.html">Fitness</a></li>
+              <li><a class="dropdown-item" href="Marketing.html">Marketing</a></li>
+              <li><a class="dropdown-item" href="Novel.html">Novel</a></li>
+              <li><a class="dropdown-item" href="Science.html">Science</a></li>
+              <li><a class="dropdown-item" href="SelfHelp.html">Self Help</a></li>
+              <li><a class="dropdown-item" href="Technology.html">Technology</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="addproducr.html">Add Product</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End-->
+
+
+  <div class="d-flex flex-wrap justify-content-around my-3">
+
+    <!-- customer detail form start -->
+    <div class="customer-detail shadow p-3 mb-2 bg-white rounded ">
+      <h2 class="text-dark">Customer Details</h2>
+
+      <form action="" id="form">
+        <label for="fullname" class="my-1">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" value="" class="w-100 py-1 border border-secondary">
+        <label for="gender" class="my-1">Gender:</label>
+        <ul type="none" class="d-flex">
+          <li type="none" class="mx-1 "><input type="radio" id="gender" value="male" name="gender" />Male</li>
+          <li type="none" class="mx-1 "><input type="radio" id="gender" value="female" name="gender" />Female</li>
+          <li type="none" class="mx-1 "><input type="radio" id="gender" value="other" name="gender" />Other</li>
+        </ul>
+        <label for="dob" class="my-1">Date of Birth:</label>
+        <input type="date" class="w-100 py-1 border border-secondary">
+        <label for="email" class="my-1">Email:</label>
+        <input type="email" id="email" name="email" value="" class="w-100 py-1 border border-secondary">
+        <label for="mobile" class="my-1">Mobile:</label>
+        <input type="number" id="mobile" name="mobile" value="" class="w-100 py-1 border border-secondary">
+        <label for="address" class="my-1" id="address" name="address" value="">Address:</label><br>
+        <textarea id="address" name="address" value="" rows="3" class="w-100 py-1 border border-secondary"></textarea>
+        <label for="State" class="my-1">State:</label>
+        <select class="h-100 w-100 p-2 my-1 btn btn-outline-dark my-2">
+          <option value="AP">Andhra Pradesh</option>
+          <option value="AR">Arunachal Pradesh</option>
+          <option value="AS">Assam</option>
+          <option value="BR">Bihar</option>
+          <option value="CT">Chhattisgarh</option>
+          <option value="GA">Gujarat</option>
+          <option value="HR">Haryana</option>
+          <option value="HP">Himachal Pradesh</option>
+          <option value="JK">Jammu and Kashmir</option>
+          <option value="GA">Goa</option>
+          <option value="JH">Jharkhand</option>
+          <option value="KA">Karnataka</option>
+          <option value="KL">Kerala</option>
+          <option value="MP">Madhya Pradesh</option>
+          <option value="MH">Maharashtra</option>
+          <option value="MN">Manipur</option>
+          <option value="ML">Meghalaya</option>
+          <option value="MZ">Mizoram</option>
+          <option value="NL">Nagaland</option>
+          <option value="OR">Odisha</option>
+          <option value="PB">Punjab</option>
+          <option value="RJ">Rajasthan</option>
+          <option value="SK">Sikkim</option>
+          <option value="TN">Tamil Nadu</option>
+          <option value="TG">Telangana</option>
+          <option value="TR">Tripura</option>
+          <option value="UT">Uttarakhand</option>
+          <option value="UP">Uttar Pradesh</option>
+          <option value="WB">West Bengal</option>
+          <option value="AN">Andaman and Nicobar Islands</option>
+          <option value="CH">Chandigarh</option>
+          <option value="DN">Dadra and Nagar Haveli</option>
+          <option value="DD">Daman and Diu</option>
+          <option value="DL">Delhi</option>
+          <option value="LD">Lakshadweep</option>
+          <option value="PY">Puducherry</option>
+        </select>
+        <label for="pincode" class="my-1">Pin Code:</label>
+        <input type="number" id="pincode" name="pincode" minlength="6" maxlength="6"
+          class="w-100 py-1 border border-secondary my-2">
+        <input type="submit" value="Submit" class="w-100 btn btn-outline-dark">
+      </form>
+    </div>
+    <!-- customer detail form end -->
+
+
+    <!-- Payment form start  -->
+    <div class="pay payment-detail shadow p-3 mb-2 bg-white rounded ">
+      <h2>Pay Now</h2>
+      <form action="">
+        <label for="nameoncard" class="my-1">Name on Card:</label>
+        <input type="text" id="nameoncard" name="nameoncard" class="w-100 py-1 border border-secondary">
+
+        <label for="cardnumber" class="my-1">Card Number:</label>
+        <input type="number" id="cardnumber" name="cardnumber" minlength="12" maxlength="12"
+          class="w-100 py-1 border border-secondary">
+        <label for="cvv" class="my-1">CVV:</label>
+        <input type="number" id="number" name="cvv" minlength="3" maxlength="3"
+          class="w-100 py-1 border border-secondary">
+        <label for="cvv" class="my-1">Expiry Date:</label>
+        <input type="text" id="cvv" name="cvv" class="w-100 py-1 border border-secondary">
+        <input type="submit" value="Pay" class="w-100 btn btn-outline-dark my-2">
+      </form>
+    </div>
+    <!-- Payment form end  -->
+  </div>
+
+
+  <!-- Footer -->
+
+  <footer class="bg-dark text-center text-white">
+    <div class="container p-4 pb-0">
+      <section class="mb-4">
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+      </section>
+    </div>
+    <div class="text-center p-3 bg-dark">
+      © 2023 Copyright:
+      <a class="text-white nav-link" href="https://mdbootstrap.com/">Gagan's Online Book Store</a>
+    </div>
+  </footer>
+
+
+  <!-- End of Footer -->
+
+  <!-- Javascript CDN Link Start  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <!-- Javascript CDN Link End  -->
+
+</body>
+
+</html>
