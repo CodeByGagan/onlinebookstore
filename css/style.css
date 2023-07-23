@@ -61,6 +61,7 @@ input[type=submit] {
 
 
 /* media query */
+
 @media only screen and (min-width: 1290px){
    .card--text{
     font-size: 16px;
@@ -106,5 +107,20 @@ input[type=submit] {
        }
        .card--title{
         font-size: 27px;
+       }
+}
+
+@media only screen and (max-width: 769px){
+    .card-pad-mob{
+        margin-top: 10px;
+    }
+   
+    .card--text{
+        font-size: 14px;
+       }
+       .card--title{
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 10px;
        }
 }
