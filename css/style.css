@@ -1,126 +1,159 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
-h2,h3,h4{
-    font-family: 'Poppins', sans-serif;
-}
-h1{
-    font-family: 'Raleway', sans-serif;
-}
-.navbar ul li a:hover{
-    color: rgb(241, 255, 240);
-}
-.dropdown-menu li a:hover{
-      background-color: black;
-    }
-#logo{
-    width: 20%;
-}
-.card .img-fit{
-    aspect-ratio:2/3 ;
-    object-fit: cover;
-}
-.card{
-    height: 100%;
-}
-.card-body{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-.card-text{
-    flex-grow: 1;
-}
-.card-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.up-arrow{
-    position:fixed;
-    bottom: 20px;
-    right: 20px;
-    width:49px;
-    height:49px;
+/* Importing Google Fonts and Font Awesome icons */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 
+/* Setting font families for heading elements */
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
 }
-input[type=text],
-input[type=number],
-input[type=email],
-input[type=date],
+
+/* Setting font family for h1 element */
+h1 {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Styling the links in the navbar on hover */
+.navbar ul li a:hover {
+  color: rgb(241, 255, 240);
+}
+
+/* Styling the links in the dropdown menu on hover */
+.dropdown-menu li a:hover {
+  background-color: black;
+}
+
+/* Styling the logo image with a fixed width of 20% */
+#logo {
+  width: 20%;
+}
+
+/* Setting aspect ratio and object-fit for images inside cards */
+.card .img-fit {
+  aspect-ratio: 2/3;
+  object-fit: cover;
+}
+
+/* Styling the card container with a height of 100% */
+.card {
+  height: 100%;
+}
+
+/* Styling the card body as a flex container with column direction and a height of 100% */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Setting flex-grow to 1 for card text to allow it to grow within the card body */
+.card-text {
+  flex-grow: 1;
+}
+
+/* Setting width, height, and object-fit for card images */
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Styling for the up-arrow icon, positioning it fixed at the bottom right of the screen */
+.up-arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 49px;
+  height: 49px;
+}
+
+/* Styling for common form input fields with border-radius */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
 textarea {
   border-radius: 4px;
 }
-input[type=submit] {
+
+/* Styling for the submit button with a black background and white text */
+input[type="submit"] {
   background-color: black;
   color: white;
   border-radius: 4px;
 }
 
-
-
-
-/* media query */
-
-@media only screen and (min-width: 1290px){
-   .card--text{
+/* Media queries for different screen sizes */
+@media only screen and (min-width: 1290px) {
+  /* Styles for screens with a width of at least 1290px */
+  .card--text {
     font-size: 16px;
-   }
-   .card--title{
+  }
+  .card--title {
     font-size: 27px;
-   }
+  }
 }
-@media only screen and (max-width: 1290px){
-   .card--text{
+
+@media only screen and (max-width: 1290px) {
+  /* Styles for screens with a width of at most 1290px */
+  .card--text {
     font-size: 14px;
     line-height: 19px;
-   }
-   .card--title{
+  }
+  .card--title {
     font-size: 20px;
-    color:black
-   }
-}
-@media only screen and (max-width: 1100px){
-   .card--text{
-    font-size: 11px;
-    line-height: 17px;
-   }
-   .card--title{
-    font-size: 16px;
-    color:black
-   }
-}
-@media only screen and (max-width: 950px){
-   .card--text{
-    font-size: 9px;
-    line-height: 13px;
-   }
-   .card--title{
-    font-size: 13px;
-    color:black;
-   }
-}
-@media only screen and (max-width: 769px){
-    .card--text{
-        font-size: 16px;
-        line-height: 19px;
-       }
-       .card--title{
-        font-size: 27px;
-       }
+    color: black;
+  }
 }
 
-@media only screen and (max-width: 769px){
-    .card-pad-mob{
-        margin-top: 10px;
-    }
-   
-    .card--text{
-        font-size: 14px;
-       }
-       .card--title{
-        font-size: 16px;
-        font-weight: bold;
-        line-height: 10px;
-       }
+@media only screen and (max-width: 1100px) {
+  /* Styles for screens with a width of at most 1100px */
+  .card--text {
+    font-size: 11px;
+    line-height: 17px;
+  }
+  .card--title {
+    font-size: 16px;
+    color: black;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  /* Styles for screens with a width of at most 950px */
+  .card--text {
+    font-size: 9px;
+    line-height: 13px;
+  }
+  .card--title {
+    font-size: 13px;
+    color: black;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  /* Styles for screens with a width of at most 769px */
+  .card--text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .card--title {
+    font-size: 27px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  /* Additional styles for screens with a width of at most 769px */
+  .card-pad-mob {
+    margin-top: 10px;
+  }
+  .card--text {
+    font-size: 14px;
+  }
+  .card--title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 10px;
+  }
 }

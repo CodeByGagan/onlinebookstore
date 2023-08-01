@@ -4,24 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Gagan's Books</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon-32x32.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="../css/style.css" rel="stylesheet">
     <style>
+        /* Styling for the hero section */
+        /* The hero class sets a background image, adjusts its size to cover the entire container, and limits the height to 90% of the viewport (screen height). */
         .hero {
-            background-image: url(../images/AboutUsBanner.jpg);
+            background-image: url(../images/aboutus/AboutUsBanner.jpg);
             width: 100%;
             height: 90vh;
             background-repeat: no-repeat;
             background-size: 100vw 100vh;
         }
 
+        /* Styling for images inside cards */
+        /* The img-fit class sets an aspect ratio of 16:9 for images inside cards and ensures they cover the entire container using the "object-fit" property. */
         .card .img-fit {
             aspect-ratio: 16/9;
             object-fit: cover;
         }
 
+        /* Styling for text justification */
+        /* The text-justify class aligns text in a justified manner, so that both the left and right sides are straight. */
         .text-justify {
             text-align: justify;
         }
@@ -70,16 +77,36 @@
     </nav>
     <!-- Navbar end  -->
 
-    <div class="hero text-white ">
-        <h1 class="position-absolute mt-5 mx-5 fw-light fs-1">Unleash the Hero Within:<br>
-            Discover the Power of Books</h1>
-    </div>
+    <!-- Hero Section -->
+    <!-- The "hero" class is used for the hero section, which typically contains a background image or color. -->
+    <!-- The "text-white" class sets the text color to white. -->
+    <div class="hero text-white">
 
-    <!-- About Us Text Start  -->
-    <div class="container content text-danger-emphasis my-5">
+        <!-- Hero Heading -->
+        <!-- The "position-absolute" class positions the heading absolutely within its container. -->
+        <!-- The "mt-5" and "mx-5" classes add margin on top and both horizontal sides, respectively. -->
+        <!-- The "fw-light" class sets the font weight to light. -->
+        <!-- The "fs-1" class sets the font size to a larger size (size 1). -->
+        <h1 class="position-absolute mt-5 mx-5 fw-light fs-1">
+            Unleash the Hero Within:<br>
+            Discover the Power of Books
+        </h1>
+    </div>
+    <!-- End of Hero Section -->
+
+
+    <!-- About Us Text Start -->
+    <!-- The container class is used to create a responsive fixed-width container for the "About Us" section. -->
+    <!-- The "my-5" class adds margin on the top and bottom to create spacing. -->
+    <div class="container my-5">
         <div class="row">
+            <!-- Left column -->
             <div class="col-md-6">
-                <p class=" lh-lg fw-light text-justify">
+                <!-- Paragraph for the "About Us" content on the left side. -->
+                <!-- The "lh-lg" class sets the line height to have comfortable spacing between lines. -->
+                <!-- The "fw-light" class sets the font weight to light. -->
+                <!-- The "text-justify" class aligns the text in a justified manner. -->
+                <p class="lh-lg fw-light text-justify">
                     Welcome to our online book store, where heroes are born and epic tales unfold. Step into a world
                     where words
                     have the power to ignite your imagination, inspire your soul, and transform you into the hero of
@@ -115,8 +142,13 @@
                     kindness.
                 </p>
             </div>
+            <!-- Right column -->
             <div class="col-md-6">
-                <p class=" lh-lg fw-light text-justify">
+                <!-- Paragraph for the "About Us" content on the right side. -->
+                <!-- The "lh-lg" class sets the line height to have comfortable spacing between lines. -->
+                <!-- The "fw-light" class sets the font weight to light. -->
+                <!-- The "text-justify" class aligns the text in a justified manner. -->
+                <p class="lh-lg fw-light text-justify">
                     Nurturing young minds through the magic of storytelling, we inspire the heroes of tomorrow to
                     believe in themselves and dream big.<br>
                     At our online book store, we are dedicated to curating a collection that reflects the diverse voices
@@ -148,15 +180,22 @@
     </div>
     <!-- About Us Text End  -->
 
-    <!-- Meet our Team Start  -->
+    <!-- Meet Our Team Start -->
+    <!-- The container class is used to create a responsive fixed-width container for the "Meet Our Team" section. -->
     <div class="container">
+        <!-- Heading for the "Meet Our Team" section, centered with the "text-center" class. -->
         <h1 class="text-center">Meet Our Team</h1>
-        <div class="row g-3 ">
+        <!-- The row class is used to create a flex container for the team member cards, with "g-3" to add a 3-unit gap between columns. -->
+        <div class="row g-3">
+            <!-- Team Member Card 1 -->
             <div class="col-md-4 col-12">
                 <div class="card">
-                    <img src="../images/profile1.jpg" alt="" class="card-img-top img-fit">
+                    <!-- Team member's profile picture. -->
+                    <img src="../images/aboutus/profile1.jpg" alt="" class="card-img-top img-fit">
                     <div class="card-body">
+                        <!-- Team member's name, centered with the "text-center" class. -->
                         <h5 class="text-center">Rohan Sharma</h5>
+                        <!-- Paragraph describing the team member, with "text-justify" class for justified alignment and "lh-base" for comfortable line height. -->
                         <p class="card-text text-justify lh-base fw-light">
                             Visionary Wordsmith: With his boundless creativity and profound love for storytelling, Rohan
                             is the driving force behind our online book store. With a pen in hand and a mind filled with
@@ -166,9 +205,11 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Team Member Card 2 -->
             <div class="col-md-4 col-12">
                 <div class="card">
-                    <img src="../images/profile2.jpg" alt="" class="card-img-top img-fit">
+                    <img src="../images/aboutus/profile2.jpg" alt="" class="card-img-top img-fit">
                     <div class="card-body">
                         <h5 class="text-center">Soniya Patel</h5>
                         <p class="card-text text-justify lh-base fw-light">
@@ -180,9 +221,11 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Team Member Card 3 -->
             <div class="col-md-4 col-12">
                 <div class="card">
-                    <img src="../images/profile3.jpg" alt="" class="card-img-top img-fit">
+                    <img src="../images/aboutus/profile3.jpg" alt="" class="card-img-top img-fit">
                     <div class="card-body">
                         <h5 class="text-center">Mohan Singh</h5>
                         <p class="card-text text-justify lh-base fw-light">
@@ -196,7 +239,7 @@
             </div>
         </div>
     </div>
-    <!-- Meet our Team End  -->
+    <!-- Meet Our Team End -->
 
     <!-- Arrow move to top  start  -->
     <div class="border rounded-circle up-arrow z-3 bg-light">
@@ -205,28 +248,24 @@
     <!-- Arrow move to top  end  -->
 
     <!-- Footer -->
-    <div class="my-5 mb-0">
-
-        <footer class="bg-dark text-center text-white">
-            <div class="container p-4 pb-0">
-                <section class="mb-4">
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                            class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                            class="fab fa-google"></i></a>
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                            class="fab fa-instagram"></i></a>
-                </section>
-            </div>
-            <div class="text-center p-3 bg-dark">
-                © 2023 Copyright:
-                <a class="text-white nav-link" href="https://mdbootstrap.com/">Gagan's Online Book Store</a>
-            </div>
-        </footer>
-
-    </div>
+    <footer class="bg-dark text-center text-white mt-5 bottom-0 w-100">
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i
+                        class="fab fa-google"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i
+                        class="fab fa-instagram"></i></a>
+            </section>
+        </div>
+        <div class="text-center p-3 bg-dark">
+            © 2023 Copyright:
+            <a class="text-white nav-link" href="#">Gagan's Online Book Store</a>
+        </div>
+    </footer>
     <!-- End of Footer -->
 
     <!-- Javascript CDN Link Start  -->

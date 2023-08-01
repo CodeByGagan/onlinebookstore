@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gagan's Books</title>
+  <!-- Favicon icon  -->
   <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+  <!-- Bootstrap css link  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link href="css/style.css" rel="stylesheet">
@@ -13,23 +15,47 @@
 
 <body>
 
-  <!-- Navbar Start-->
+  <!-- Navbar Start -->
+  <!-- The navigation bar with the "navbar" class for basic styling, "sticky-top" to stick it to the top of the screen when scrolling, "navbar-dark" for light text on a dark background. -->
   <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-    <div class="container-fluid bg-dark ">
+
+    <!-- Container to hold the navbar content. The "container-fluid" class ensures it takes the full width of the screen. -->
+    <div class="container-fluid bg-dark">
+
+      <!-- Navbar toggler button for small screens. The "navbar-toggler" class is used to create a button that toggles the collapse behavior. -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- The navbar toggler icon (commonly three horizontal lines). The "navbar-toggler-icon" class sets the default icon style. -->
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <!-- Collapsible part of the navbar. The "collapse" class will hide these links on small screens, and "navbar-collapse" ensures proper behavior. -->
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" id="logo"></a>
+
+        <!-- Navbar brand (logo) with a link to the home page. -->
+        <a class="navbar-brand" href="index.html">
+          <!-- An image tag to display the logo. The "id" attribute is used to identify this image as "logo". -->
+          <img src="images/logo.png" alt="logo" id="logo">
+        </a>
+
+        <!-- Unordered list for navbar links with the "navbar-nav" class. -->
+        <!-- "d-flex ms-auto" classes set the links to the right side of the navbar. -->
         <ul class="navbar-nav mb-2 mb-lg-0 d-flex ms-auto">
+
+          <!-- Home link with an active class for highlighting the current page. -->
           <li class="nav-item">
+            <!-- "nav-link" class creates a styled link. "active" class shows that this is the current page. -->
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
+
+          <!-- Dropdown menu for selecting a category. "dropdown" class is used to create a dropdown menu. -->
           <li class="nav-item dropdown">
+            <!-- "nav-link" class creates a styled link. "dropdown-toggle" class is used to indicate a dropdown. -->
             <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
               Select Category
             </a>
+
+            <!-- Unordered list to hold the items of the dropdown menu. The "dropdown-menu" class creates the dropdown menu. -->
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="html/Education.html">Education</a></li>
               <li><a class="dropdown-item" href="html/Entrepreneurship.html">Entrepreneurship </a></li>
@@ -40,54 +66,85 @@
               <li><a class="dropdown-item" href="html/SelfHelp.html">Self Help</a></li>
               <li><a class="dropdown-item" href="html/Technology.html">Technology</a></li>
             </ul>
-          </li>
 
           </li>
+
+          <!-- About Us link. -->
           <li class="nav-item">
-            <a class="nav-link " href="html/aboutus.html">About Us</a>
+            <!-- "nav-link" class creates a styled link. -->
+            <a class="nav-link" href="html/aboutus.html">About Us</a>
           </li>
+
+          <!-- Add Product link. -->
           <li class="nav-item">
-            <a class="nav-link " href="html/addproducr.html">Add Product</a>
+            <!-- "nav-link" class creates a styled link. -->
+            <a class="nav-link" href="html/addproducr.html">Add Product</a>
           </li>
+
         </ul>
       </div>
     </div>
   </nav>
-  <!-- Navbar End-->
+  <!-- Navbar End -->
 
-  <!-- Carousel Start-->
+
+  <!-- Carousel Start -->
+  <!-- The carousel container with an ID "carouselExampleInterval". It will be used to initiate the carousel functionality. -->
+  <!-- The "carousel" class and "data-bs-ride" attribute set it up as a carousel that automatically cycles through images. -->
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- The carousel-inner holds the individual carousel items (slides). -->
     <div class="carousel-inner">
+
+      <!-- The first carousel item with the "active" class to show it initially. -->
+      <!-- The "data-bs-interval" attribute sets the time interval (in milliseconds) before transitioning to the next slide. -->
       <div class="carousel-item active" data-bs-interval="5000">
+        <!-- Image for the first slide, with "d-block" class to make it a block-level element and "w-100" to make it 100% width. -->
         <img src="images/carousel1.jpg" class="d-block w-100" alt="...">
       </div>
+
+      <!-- The second carousel item. -->
       <div class="carousel-item" data-bs-interval="5000">
+        <!-- Image for the second slide. -->
         <img src="images/carousal2.jpg" class="d-block w-100" alt="...">
       </div>
+
+      <!-- The third carousel item. -->
       <div class="carousel-item" data-bs-interval="5000">
+        <!-- Image for the third slide. -->
         <img src="images/carousel3.jpg" class="d-block w-100" alt="...">
       </div>
+
     </div>
   </div>
-  <!-- Carousel End-->
+  <!-- Carousel End -->
 
   <!-- Card Row1 Start -->
   <div class="container-fluid my-5">
     <div class="heading mb-3">
-      <h1 class="mb-3 text-secondary">Self Help Books <span class="fs-6"><a href="html/SelfHelp.html" class="link-dark ">see
+      <h1 class="mb-3 text-secondary">Self Help Books <span class="fs-6"><a href="html/SelfHelp.html"
+            class="link-dark ">see
             more...</a></span></h1>
     </div>
 
     <div class="row">
 
+      <!-- This div uses Bootstrap "col-md-4" assigning 4 unit out of 12 (for screen width ≥ 768px) -->
       <div class="col-md-4 card-pad-mob">
-        <div div class="card ">
+        <!-- This div contains a Bootstrap "card" element, representing a card component. -->
+        <div div class="card">
+          <!-- This row uses Bootstrap "g-0" class, which removes the gutter spacing between columns. -->
           <div class="row g-0">
+            <!-- Left column (occupying 5 out of 12 units on screens ≥ 576px). -->
             <div class="col-sm-5 col">
+              <!-- An image inside the card, with a Bootstrap "card-img" class and "img-fluid" to make it responsive. -->
               <img src="images/Self Help/AtomicHabitsbyJamesClear.webp" class="card-img img-fluid rounded-start" alt="">
             </div>
+            <!-- Right column (occupying 7 out of 12 units on screens ≥ 576px). -->
             <div class="col-sm-7 col">
+              <!-- Card body containing content in a flex-column arrangement. -->
               <div class="card-body d-flex flex-column">
+                <!-- First flex item with a height of 100%. -->
                 <div class="h-100">
                   <h3 class="card--title">Book Name</h3>
                   <p class="card--text">
@@ -96,7 +153,9 @@
                   </p>
                   <h5 class="card--title">&#8377;<strong>500</strong></h5>
                 </div>
+                <!-- Second flex item. -->
                 <div>
+                  <!-- "Buy Now" button linking to the "buyproduct.html" page, with Bootstrap "btn" and "btn-dark" classes. -->
                   <a href="html/buyproduct.html" class="btn btn-dark" type="button">Buy Now</a>
                 </div>
               </div>
@@ -162,7 +221,8 @@
   <!-- Card Row2 Start -->
   <div class="container-fluid my-5">
     <div class="heading mb-3">
-      <h1 class="mb-3 text-secondary">Entrepreneurship Books <span class="fs-6"><a href="html/Entrepreneurship.html" class="link-dark ">see
+      <h1 class="mb-3 text-secondary">Entrepreneurship Books <span class="fs-6"><a href="html/Entrepreneurship.html"
+            class="link-dark ">see
             more...</a></span></h1>
     </div>
 
@@ -252,7 +312,8 @@
   <!-- Card Row3 Start -->
   <div class="container-fluid my-5">
     <div class="heading mb-3">
-      <h1 class="mb-3 text-secondary">Fitness Books <span class="fs-6"><a href="html/Fitness.html" class="link-dark ">see
+      <h1 class="mb-3 text-secondary">Fitness Books <span class="fs-6"><a href="html/Fitness.html"
+            class="link-dark ">see
             more...</a></span></h1>
     </div>
 
@@ -343,7 +404,8 @@
   <!-- Card Row4 Start -->
   <div class="container-fluid my-5">
     <div class="heading mb-3">
-      <h1 class="mb-3 text-secondary">Educational Books <span class="fs-6"><a href="html/Education.html" class="link-dark ">see
+      <h1 class="mb-3 text-secondary">Educational Books <span class="fs-6"><a href="html/Education.html"
+            class="link-dark ">see
             more...</a></span></h1>
     </div>
 
@@ -430,7 +492,8 @@
   <!-- Card Row5 Start -->
   <div class="container-fluid my-5">
     <div class="heading mb-3">
-      <h1 class="mb-3 text-secondary">Marketing Books <span class="fs-6"><a href="html/Marketing.html" class="link-dark ">see
+      <h1 class="mb-3 text-secondary">Marketing Books <span class="fs-6"><a href="html/Marketing.html"
+            class="link-dark ">see
             more...</a></span></h1>
     </div>
 
@@ -520,7 +583,8 @@
   <!-- Card Row6 Start -->
   <div class="container-fluid my-5">
     <div class="heading mb-3">
-      <h1 class="mb-3 text-secondary">Science Books <span class="fs-6"><a href="html/Science.html" class="link-dark ">see
+      <h1 class="mb-3 text-secondary">Science Books <span class="fs-6"><a href="html/Science.html"
+            class="link-dark ">see
             more...</a></span></h1>
     </div>
 
@@ -607,7 +671,8 @@
   <!-- Card Row7 Start -->
   <div class="container-fluid my-5">
     <div class="heading mb-3">
-      <h1 class="mb-3 text-secondary">Technology Books <span class="fs-6"><a href="html/Technology.html" class="link-dark ">see
+      <h1 class="mb-3 text-secondary">Technology Books <span class="fs-6"><a href="html/Technology.html"
+            class="link-dark ">see
             more...</a></span></h1>
     </div>
 
@@ -694,7 +759,8 @@
   <!-- Card Row8 Start -->
   <div class="container-fluid my-5">
     <div class="heading mb-3">
-      <h1 class="mb-3 text-secondary">Novels <span class="fs-6"><a href="html/Novel.html" class="link-dark ">see more...</a></span>
+      <h1 class="mb-3 text-secondary">Novels <span class="fs-6"><a href="html/Novel.html" class="link-dark ">see
+            more...</a></span>
       </h1>
     </div>
 
@@ -786,25 +852,33 @@
   <!-- Arrow move to top  end  -->
 
   <!-- Footer -->
-  <div class="my-5 mb-0">
+  <!-- The footer section with a dark background and centered white text. It's positioned at the bottom of the page ("bottom-0"). -->
+  <!-- The "w-100" class sets the width to 100% to span the full width of the page. The "mt-5" adds a margin-top of 5 units. -->
+  <footer class="bg-dark text-center text-white mt-5 bottom-0 w-100">
 
-    <footer class="bg-dark text-center text-white">
-      <div class="container p-4 pb-0">
-        <section class="mb-4">
-          <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fab fa-facebook-f"></i></a>
-          <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fab fa-twitter"></i></a>
-          <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fab fa-google"></i></a>
-          <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fab fa-instagram"></i></a>
-        </section>
-      </div>
-      <div class="text-center p-3 bg-dark">
-        © 2023 Copyright:
-        <a class="text-white nav-link" href="#">Gagan's Online Book Store</a>
-      </div>
-    </footer>
+    <!-- Container to hold the footer content. The "p-4" adds padding, and "pb-0" removes bottom padding. -->
+    <div class="container p-4 pb-0">
 
-  </div>
+      <!-- Social media section with links as floating buttons. -->
+      <section class="mb-4">
+        <!-- Each link has a white outline button with appropriate icon from FontAwesome. -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fab fa-twitter"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fab fa-google"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fab fa-instagram"></i></a>
+      </section>
+    </div>
+
+    <!-- Footer bottom section with more copyright information. -->
+    <div class="text-center p-3 bg-dark">
+      <!-- Copyright notice followed by the website name with a link. -->
+      © 2023 Copyright:
+      <a class="text-white nav-link" href="#">Gagan's Online Book Store</a>
+    </div>
+
+  </footer>
   <!-- End of Footer -->
+
 
 
   <!-- Javascript CDN Link Start  -->
